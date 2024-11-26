@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+			{
+					"name": "(gdb) Launch",
+					"type": "cppdbg",
+					"request": "launch",
+					"program": "${workspaceFolder}/tools/system",
+					"miDebuggerServerAddress": "localhost:1234",
+					"args": [],
+					"stopAtEntry": false,
+					"cwd": "${workspaceFolder}",
+					"environment": [],
+					"externalConsole": false,
+					"MIMode": "gdb",
+					//"targetArchitecture": "i386:x86-64",  // 设置为 x86_64 或 aarch64
+					"setupCommands": [
+						{
+							"description": "Set architecture to i386:x86-64",
+							"text": "set architecture i386:x86-64",  // 设置架构
+							"ignoreFailures": false
+						}
+					]
+			}
+	]
+}
